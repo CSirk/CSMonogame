@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Logging.Loggers
 {
-    class ScreenLogger
+    public class ScreenLogger
     {
+
     }
 }
