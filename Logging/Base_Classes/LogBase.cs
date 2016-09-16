@@ -8,8 +8,11 @@ namespace Logging.Base_Classes
 {
     public class LogBase
     {
-        protected List<string> ScreenLog = new List<string>();
+        protected static List<string> ScreenLog = new List<string>();
 
-        public static void AddToInfoLog() { }
+        protected static void AddToScreenLog<T>(T toAdd)
+        {
+            ScreenLog.Add(toAdd.ToString());
+        }
     }
 }
